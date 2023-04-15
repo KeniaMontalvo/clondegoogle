@@ -43,6 +43,7 @@ nav .nav-right-section .menu {
     width: 20px;
     height: 20px;
     background-size: contain;
+    cursor: pointer;
 }
 
 /*Imagen de cuenta*/
@@ -107,6 +108,7 @@ main .main-input .search-icon {
     width: 15px;
     background-repeat: no-repeat;
     height: 15px;
+    margin-left: 13px;
 }
 
 main .main-input .micro-icon {
@@ -116,15 +118,17 @@ main .main-input .micro-icon {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    margin-right: 10px;
 }
 
 main .main-input .cam-icon {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    background-image: url("https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg");
     width: 18px;
     height: 18px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    margin-right: 15px;
 }
 
 main .main-buttons {
@@ -138,4 +142,55 @@ main .main-buttons div {
 
 main .main-buttons button {
     border: none;
+    height: 36px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+    border: 1px solid #f8f9fa;
+}
+
+main .main-buttons button:hover{
+    box-shadow: 0 1.5px rgba(0,0,0,.1);
+    border: 1px solid #dadce0;
+    color: #202124;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    font-size: 13px;
+    border-top: 1px solid #e4e4e4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /* mandar todo el contenido al final */
+    bottom: 0;
+}
+
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a {
+    color: #70757a;
+    margin: 10px;
 }
